@@ -29,7 +29,7 @@ public class NdfdXMLBindingStubTest {
             DwmlType latlong = (DwmlType) jaxbUnmarshaller.unmarshal(new StringReader(res));
             latlongstring = latlong.getLatLonList();
 
-            logger.info(latlong);
+            logger.info(latlongstring);
         } catch (JAXBException e) {
             logger.error("Unmarshalling failed", e);
         }
